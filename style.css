@@ -1,0 +1,80 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --blue: #3178c6;
+    --bluer: #235a97;
+    --clear-blue: #719af4;
+    --grey0: #fcfcfc;
+    --grey1: #f7f7f7;
+    --grey2: #f1f1f1;
+  
+    --text-color: #333;
+  }
+  
+  body {
+    font-family: "Segoe UI Web (West European)", "Segoe UI", -apple-system,
+      BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  /*Bar de navigation*/
+  header {
+    width: 100vw;
+    height: 14vh;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    align-items: baseline;
+    z-index: 10;
+    background-color: var(--blue);
+  }
+  #nav-bar {
+    order: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 2;
+    z-index: 10;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    opacity: 0.5;
+  }
+  #iconeTDG {
+    max-width: 100px;
+    height: auto;
+  }
+  /*section generique*/
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--blue);
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /*titre secondaire*/
+  h1 {
+    font-size: 2rem;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+  }
+  
+  /*Section intro*/
+  #intro img {
+    margin-top: 5vh;
+    max-width: 40%;
+    height: auto;
+  }
+  
