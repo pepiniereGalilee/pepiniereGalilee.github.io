@@ -6,7 +6,7 @@
   }
   
   :root {
-    --blue: #3178c6;
+    --blue: #008000;
     --bluer: #235a97;
     --clear-blue: #719af4;
     --grey0: #fcfcfc;
@@ -77,4 +77,124 @@ section {
     max-width: 40%;
     height: auto;
   }
+
+/*Section navigation*/
+#navigation {
+  background-color: var(--grey1);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#navigation div {
+  height: 70vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#navigation i {
+  font-size: 15vh;
+  margin-left: 30%;
+  align-self: flex-start;
+}
+.button-link {
+  padding: 4vh;
+  width: 25vh;
+  text-align: center;
+  text-decoration: none;
+  background: var(--grey0);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/*Section Contact*/
+#contact {
+  flex-direction: column;
+  background-color: var(--grey1);
+  color: var(--text-color);
+}
+#contact-wraper {
+  margin-top: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 60vw;
+}
+#contact-wraper p {
+  margin: 1vw;
+}
+#mail {
+  color: #333;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 6vw;
+  text-align: center;
+  text-decoration: none;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  font-size: 3vw !important;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+  /*Section pépinière*/
+  #pepiniere{
+    height: 200vh;
+  }
+  table, th, td {
+    border:1px solid black;
+  }
+
+  #pepiniere img {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+/*Section frutiers*/
+  #fruitiers {
+    height: 220vh;
+  }
+  #fruitiers img {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+  /*Section Osier*/
+  #osier{
+    height: 300vh;
+  }
+  #osier img{
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: 2vh
+  }
+/*Section Stage*/
+#stages{
+  height: 217vh;
+}
+#stages img{
+  max-width: 80vw;
+  max-height: 80vh;
+  margin: 2vh
+}
+  /*footer*/
+footer {
+  text-align: center;
+}
+footer a {
+  color: var(--text-color);
+}
   
