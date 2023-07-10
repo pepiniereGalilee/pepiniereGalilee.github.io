@@ -1,82 +1,83 @@
 /* CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --blue: #008000;
-    --bluer: #235a97;
-    --clear-blue: #719af4;
-    --grey0: #fcfcfc;
-    --grey1: #f7f7f7;
-    --grey2: #f1f1f1;
-  
-    --text-color: #333;
-  }
-  
-  body {
-    font-family: "Segoe UI Web (West European)", "Segoe UI", -apple-system,
-      BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  }
-  
-  /*Bar de navigation*/
-  header {
-    width: 100vw;
-    height: 14vh;
-    display: flex;
-    flex-direction: row;
-    top: 0;
-    align-items: baseline;
-    z-index: 10;
-    background-color: var(--blue);
-  }
-  #nav-bar {
-    order: 5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 2;
-    z-index: 10;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  a:hover {
-    opacity: 0.5;
-  }
-  #iconeTDG {
-    max-width: 100px;
-    height: auto;
-  }
-  /*section generique*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #c4b76c;
+  --bluer: #235a97;
+  --clear-blue: #719af4;
+  --grey0: #fcfcfc;
+  --grey1: #f7f7f7;
+  --grey2: #f1f1f1;
+
+  --text-color: #333;
+}
+
+body {
+  font-family: "Segoe UI Web (West European)", "Segoe UI", -apple-system,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+/*Bar de navigation*/
+header {
+  width: 100vw;
+  height: 14vh;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  align-items: baseline;
+  z-index: 10;
+  background-color: var(--blue);
+}
+#nav-bar {
+  order: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 2;
+  z-index: 10;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  opacity: 0.5;
+}
+#iconeTDG {
+  max-width: 100px;
+  height: auto;
+}
+/*section generique*/
 section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: var(--blue);
-    color: white;
-    line-height: 1.6;
-  }
-  
-  /*titre secondaire*/
-  h1 {
-    font-size: 2rem;
-    margin-top: 2vh;
-    margin-bottom: 5vh;
-  }
-  
-  /*Section intro*/
-  #intro img {
-    margin-top: 5vh;
-    max-width: 40%;
-    height: auto;
-  }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--blue);
+  color: white;
+  line-height: 1.6;
+}
+
+/*titre secondaire*/
+h1 {
+  font-size: 2rem;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+h2{
+  margin-top: 5vh;
+}
+
+/*Section intro*/
+#intro img {
+  width: 65vw;
+}
 
 /*Section navigation*/
 #navigation {
@@ -145,56 +146,103 @@ section {
   color: white;
   font-size: 3vw !important;
 }
-
-
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
-
-  /*Section pépinière*/
-  #pepiniere{
-    height: 200vh;
-  }
-  table, th, td {
-    border:1px solid black;
-  }
-
-  #pepiniere img {
-    max-width: 80vw;
-    max-height: 80vh;
-  }
-/*Section frutiers*/
-  #fruitiers {
-    height: 220vh;
-  }
-  #fruitiers img {
-    max-width: 80vw;
-    max-height: 80vh;
-  }
-  /*Section Osier*/
-  #osier{
-    height: 300vh;
-  }
-  #osier img{
-    max-width: 80vw;
-    max-height: 80vh;
-    margin: 2vh
-  }
-/*Section Stage*/
-#stages{
-  height: 217vh;
+/*Section acces*/
+#acces {
+  height: 200vh;
 }
-#stages img{
+#acces img {
   max-width: 80vw;
   max-height: 80vh;
-  margin: 2vh
 }
-  /*footer*/
+
+/*Section pépinière*/
+#pepiniere {
+  height: 200vh;
+  background-color: var(--grey1);
+  color: var(--text-color);
+}
+#pepiniere div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pepiniere p {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+#pepiniere img {
+  max-width: 60vw;
+  max-height: 60vh;
+}
+/*Section frutiers*/
+#fruitiers {
+  height: 250vh;
+  background-color: var(--grey1);
+  color: var(--text-color);
+}
+#fruitiers p {
+  margin-top: 5vh;
+  
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+#fruitiers li {
+  margin-left: 30vw;
+  margin-right: 20vw;
+}
+#fruitiers img {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table{
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+/*Section Osier*/
+#osier {
+  height: 300vh;
+  background-color: var(--grey1);
+  color: var(--text-color);
+}
+#osier p{
+  margin-left:20vw;
+  margin-right: 20vw;
+}
+#osier img {
+  max-width: 80vw;
+  max-height: 80vh;
+  margin: 2vh;
+}
+/*Section Stage*/
+#stages {
+  height: 235vh;
+  background-color: var(--grey1);
+  color: var(--text-color);
+}
+#stages p{
+  margin-left:20vw;
+  margin-right: 20vw;
+}
+#stages img {
+  max-width: 80vw;
+  max-height: 80vh;
+  margin: 2vh;
+}
+/*footer*/
 footer {
   text-align: center;
 }
 footer a {
   color: var(--text-color);
 }
-  
