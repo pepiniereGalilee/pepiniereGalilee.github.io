@@ -12,6 +12,7 @@
   --grey0: #fcfcfc;
   --grey1: #f7f7f7;
   --grey2: #f1f1f1;
+  --brown:#7c694e;
 
   --text-color: #333;
 }
@@ -22,13 +23,24 @@ body {
 }
 
 /*Bar de navigation*/
-header {
-  width: 100vw;
-  height: 14vh;
+#contact-band{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--brown);
+  color:var(--grey0)
+}
+#contact-band a{
+  color:var(--grey0)
+}
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   top: 0;
-  align-items: baseline;
+  
   z-index: 10;
   background-color: var(--blue);
 }
@@ -76,7 +88,7 @@ h2{
 
 /*Section intro*/
 #intro img {
-  width: 65vw;
+  width: 100vw;
 }
 
 /*Section navigation*/
