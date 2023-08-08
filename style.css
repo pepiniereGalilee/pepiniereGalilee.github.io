@@ -242,6 +242,7 @@ td {
 table {
   margin-left: 5vw;
   margin-right: 5vw;
+  border-collapse: collapse;
 }
 
 /*Section Osier*/
