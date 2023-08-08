@@ -183,9 +183,7 @@ h2 {
 }
 
 /*Section pépinière*/
-#pepiniere {
-  height: 140vh;
-}
+
 #pepiniere div {
   display: flex;
   flex-direction: row;
