@@ -94,6 +94,13 @@ h2 {
   margin-top: 5vh;
 }
 
+h3 {
+  align-self: flex-start;
+  margin-left: 5vw;
+  margin-top: 3vh;
+  text-decoration-line: underline;
+}
+
 /*Section intro*/
 #intro {
   height: auto;
@@ -217,18 +224,14 @@ h2 {
   margin-left: 5vw;
   margin-right: 5vw;
 }
+.description {
+  margin-top: 0.5vh !important;
+}
 #fruitiers img {
   max-width: 50vw;
   max-height: 50vh;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-#fruitiers ul {
-  margin-top: 5vh;
-}
-#fruitiers li {
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -282,14 +285,12 @@ footer a {
 .mobile-container {
   height: 1vh;
   color: var(--blue);
- 
 }
 
 .topnav {
   overflow: hidden;
   background-color: var(--blue);
   position: relative;
-  
 }
 
 .topnav #myLinks {
@@ -329,18 +330,18 @@ footer a {
 }
 @media only screen and (max-width: 800px) {
   /*section generique*/
-section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: var(--grey1);
-  color: var(--text-color);
-  line-height: 1.6;
-  margin-top: 25vh;
-  height: auto;
-}
+  section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--grey1);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-top: 25vh;
+    height: auto;
+  }
 
   img {
     display: none;
