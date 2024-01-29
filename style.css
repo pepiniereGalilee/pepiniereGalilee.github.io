@@ -120,7 +120,7 @@ h3 {
   color: var(--text-color);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 #navigation div {
@@ -131,14 +131,14 @@ h3 {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
+  margin: 1vw;
 }
 #navigation i {
   font-size: 15vh;
-  margin-left: 30%;
-  align-self: flex-start;
 }
 .button-link {
-  padding: 4vh;
+  padding: 2vh;
+  height: 10vh;
   width: 25vh;
   text-align: center;
   text-decoration: none;
@@ -170,7 +170,6 @@ h3 {
 }
 /* Style all font awesome icons */
 .fa {
-  padding: 20px;
   font-size: 50px;
   width: 6vw;
   text-align: center;
