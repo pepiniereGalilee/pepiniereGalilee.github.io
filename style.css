@@ -111,7 +111,11 @@ h3 {
   max-height: 120vh;
   height: auto;
 }
-
+#fin-de-saison{
+  margin-right: 25vw;
+  margin-left: 25vw;
+  text-align-last: center;
+}
 /*Section navigation*/
 #navig {
   margin-top: 0;
@@ -359,7 +363,13 @@ footer a {
   #navigation {
     flex-direction: column;
   }
-  #navig h1 {
+  #fin-de-saison{
+    margin-right: 10vw;
+    margin-left: 10vw;
+    text-align-last: center;
+  }
+  #navig h1{
     display: none;
   }
+ 
 }
