@@ -112,11 +112,24 @@ h3 {
   height: auto;
 }
 #fin-de-saison{
-  margin-right: 25vw;
-  margin-left: 25vw;
-  text-align-last: center;
-  
+  font-size:x-large;  
 }
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:80vw;
+}
+
+
 /*Section navigation*/
 #navig {
   margin-top: 0;
@@ -331,6 +344,7 @@ footer a {
   .mobile-container {
     display: none;
   }
+
 }
 @media only screen and (max-width: 800px) {
   /*section generique*/
@@ -372,6 +386,9 @@ footer a {
   }
   #navig h1{
     display: none;
+  }
+  #fin-de-saison{
+    font-size:medium;  
   }
  
 }
