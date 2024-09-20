@@ -259,6 +259,7 @@ th,
 td {
   border: 1px solid black;
   text-align: center;
+  padding:1vh;
 }
 table {
   margin-left: 5vw;
