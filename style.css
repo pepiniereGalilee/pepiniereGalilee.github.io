@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ /*  border: solid black 1px; */
 }
 
 :root {
@@ -244,6 +245,9 @@ h3 {
 }
 .description {
   margin-top: 0.5vh !important;
+}
+#cognassier{
+  text-align:left;
 }
 #fruitiers img {
   max-width: 50vw;
