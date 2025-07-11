@@ -39,7 +39,7 @@ header {
   background-color: var(--brown);
   color: var(--grey0);
   height: 10vh;
-  transition: 0.4s;
+  transition: 0.4s; 
   align-items: center;
 }
 #contact-band a {
@@ -115,7 +115,8 @@ h3 {
   height: auto;
 }
 #fin-de-saison{
-  font-size:x-large;  
+  font-size:x-large;
+  text-shadow: 2px 2px 2px black;
 }
 /* Container holding the image and the text */
 .container {
