@@ -1,109 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <!-- Add icon library -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/4bb7e4a78e.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Pépinière Galilée</title>
-    <meta
-      name="description"
-      content="Pépinière permacole Corrézienne de fruitiers anciens."
-    />
-    <script src="/scripts/phoneNavBar.js"></script>
-  </head>
-  <body>
-    <header>
-      <div id="contact-band">
-        <p><i class="fa fa-solid fa-phone"></i> 06 75 26 81 07</p>
-        <a id="mail" href="mailto:galileehm@gmail.com"
-          ><i class="fa fa-solid fa-envelope"></i>galileehm@gmail.com</a
-        >
-      </div>
-      <div id="bande-nav">
-        <nav id="nav-bar">
-          <a class="nav-link" href="index.html"><h1>PÉPINIÈRE GALILÉE</h1></a>
-          <a class="nav-link" href="html/lapepiniere.html"
-            ><strong>La Pépinière</strong>
-          </a>
-          <a class="nav-link" href="html/fruitiers.html"
-            ><strong>Les Fruitiers</strong>
-          </a>
-          <a class="nav-link" href="html/osier.html"
-            ><strong>Osier et Vannerie</strong></a
-          >
-          <a class="nav-link" href="html/stages.html"
-            ><strong>Les Stages</strong></a
-          >
-          <a class="nav-link" href="html/contact.html"
-            ><strong>Contact</strong></a
-          >
-          <a class="nav-link" href="html/acces.html"><strong>Accès</strong></a>
-        </nav>
-      </div>
+---
+layout: default
+---
 
-      <div class="mobile-container">
-        <!-- Top Navigation Menu -->
-        <div class="topnav">
-          <a class="nav-link" href="index.html"><h1>PÉPINIÈRE GALILÉE</h1></a>
-          <div id="myLinks">
-            <a class="nav-link" href="html/lapepiniere.html"
-              ><strong>La Pépinière</strong>
-            </a>
-            <a class="nav-link" href="html/fruitiers.html"
-              ><strong>Les Fruitiers</strong>
-            </a>
-            <a class="nav-link" href="html/osier.html"
-              ><strong>Osier et Vannerie</strong></a
-            >
-            <a class="nav-link" href="html/stages.html"
-              ><strong>Les Stages</strong></a
-            >
-            <a class="nav-link" href="html/contact.html"
-              ><strong>Contact</strong></a
-            >
-            <a class="nav-link" href="html/acces.html"
-              ><strong>Accès</strong></a
-            >
-          </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-    <section id="intro">
-      <div class="container">
-        <img src="photos/pics_pepi_1.jpg" />
-        <div class="centered">
-          <p id="fin-de-saison">
-            Chers amis jardiniers,<br />
-            Les ventes sont terminées, mais <strong>rendez-vous dès septembre :</strong> le
-            catalogue des arbres disponibles en précommande sera mis en ligne,
-            pour des <strong>plantations à partir de fin novembre </strong> .<br /> Bon été à tous!<br />
-          </p>
-        </div>
-      </div>
-    </section>
+<section id="intro">
+  <div class="container">
+    <img src="photos/pics_pepi_1.jpg" />
+    <div class="centered">
+      <p id="fin-de-saison">
+        Chers amis jardiniers,<br />
+        Les ventes sont terminées, mais <strong>rendez-vous dès septembre :</strong> le
+        catalogue des arbres disponibles en précommande sera mis en ligne,
+        pour des <strong>plantations à partir de fin novembre </strong> .<br /> Bon été à tous!<br />
+      </p>
+    </div>
+  </div>
+</section>
 
-    <section id="navig">
-      <h1>Bienvenue à la pépinière Galilée</h1>
+<section id="navig">
+  <h1>Bienvenue à la pépinière Galilée</h1>
 
-      <div id="navigation">
+  <div class="cards-container">
+    <div class="card">
+      <h2>La Pépinière</h2>
+      <div class="image-wrapper">
+        <img src="/photos/logo-classique.png" alt="Image 1" />
+      </div>
+      <p>Pépinière agroécologique, respectueuse de la biodiversité.</p>
+      <a class="button-link" href="/la-pepiniere">Explorer</a>
+    </div>
+
+    <div class="card">
+      <h2>Les Fruitiers</h2>
+      <div class="image-wrapper">
+        <img src="/photos/fruitiers-accueil.jpg" alt="Image 2" />
+      </div>
+      <p>Variétés anciennes, résistantes aux maladies et produisants des fruits délicieux.
+        <br>Les différentes variétés et leurs tarifs sont présentés ici !
+      </p>
+      <a class="button-link" href="/fruitiers">Planter</a>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <div class="image-wrapper">
+        <img src="/photos/contact.jpg" alt="Image 3" />
+      </div>
+      <p>Pour vos achats, vos questions et pour prendre rendez-vous.</p>
+      <a class="button-link" href="/contact">Contacter</a>
+    </div>
+  </div>
+
+
+
+  <!-- <div id="navigation">
         <div id="face">
           <strong>La Pépinière</strong>
           <i class="fa-solid fa-tree"></i>
           <p>Pépinière agroécologique, respectueuse de la biodiversité.</p>
-          <a class="button-link" href="/html/lapepiniere.html">Explorer</a>
+          <a class="button-link" href="/la-pepiniere">Explorer</a>
         </div>
         <div id="vision">
           <strong>Les Fruitiers</strong>
@@ -112,19 +66,13 @@
             Variétés anciennes, résistantes aux maladies et produisants des
             fruits délicieux.
           </p>
-          <a class="button-link" href="/html/fruitiers.html">Planter</a>
+          <a class="button-link" href="/fruitiers">Planter</a>
         </div>
         <div id="bookUs">
           <strong>Contact</strong>
           <i class="fa-solid fa-phone"></i>
           <p>Pour vos achats, vos questions et pour prendre rendez-vous.</p>
-          <a class="button-link" href="/html/contact.html">Contacter</a>
+          <a class="button-link" href="/contact">Contacter</a>
         </div>
-      </div>
-    </section>
-
-    <footer>
-      <a class="nav-link" href="html/mentionLegales.html">Mentions légales</a>
-    </footer>
-  </body>
-</html>
+      </div>-->
+</section>
