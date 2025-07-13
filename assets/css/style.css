@@ -314,7 +314,8 @@ h3 {
 #acces {
   min-height: 100vh;
   width: 90%;
-  margin: 0 auto;
+  margin-left:auto;
+  margin-right:auto
 }
 
 #acces > .divrow{
